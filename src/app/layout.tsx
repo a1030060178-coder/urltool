@@ -1,3 +1,3 @@
-import type { Metadata } from "next";import "./globals.css";
+import type { Metadata } from "next";import { Analytics } from "@vercel/analytics/react";import "./globals.css";
 export const metadata: Metadata = {title:"URL Encoder/Decoder — Free Online Tool",description:"Encode and decode URLs, Base64, and HTML entities instantly. Free, no ads, all in your browser."};
-export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en" className="h-full"><body className="h-full bg-white text-zinc-900">{children}</body></html>;}
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en" className="h-full"><body className="h-full bg-white text-zinc-900">{children}<Analytics /></body></html>;}

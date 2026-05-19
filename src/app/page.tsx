@@ -55,7 +55,10 @@ export default function Page() {
         </div>
       )}
 
-      <footer className="text-center mt-16 text-xs text-zinc-400">All processing in your browser. No data transmitted.</footer>
+      <footer className="text-center mt-16 text-xs text-zinc-400 space-y-2">
+        <p>All processing in your browser. No data transmitted.</p>
+        <p><a href="https://ko-fi.com/penn662500" target="_blank" className="text-zinc-500 hover:text-zinc-600 underline">☕ Support this tool</a></p>
+      </footer>
     </div>
   );
 }
